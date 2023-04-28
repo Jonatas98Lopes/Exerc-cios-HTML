@@ -32,20 +32,83 @@
             </ul>
             <p>Essas duas extensões serão muito úteis quando quisermos verificar como o nosso trabalho está ficando. No caso, da Emmet, ela já vem instalada com o VSCode, mas em caso de você escolher outro editor de código, você deve baixá-la.</p>
             <h2 id="aula03">Inspetor de Elementos</h2>
+            <h3>O que é o <strong>inspetor de elementos</strong>?</h3>
             <small><a href="#inicio">(Voltar)</a></small>
-            <p>Continua...</p>
+            <p>Agora, discutiremos a respeito do <strong>inspetor de elementos</strong>. Essa ferramenta é uma ferramenta do navegador. No nosso caso, estamos usando o Chrome, mas outras navegadores também o possuem, como Firefox, Opera, Microfost Edge...</p>
+            <h3>Como usá-lo?</h3>
+            <p>Antes de mais nada, escolha o site no qual quer ver os elementos. Estando lá, aperte a tecla <strong>F12</strong> no seu teclado. Você verá o HTML da página, além de ser possível ver propriedades CSS, JavaScript entre outras.</p>
+            <p>Outra forma de abrir o inspetor de elementos no Chrome é procurar os três pontinhos no canto superior direito da página e clicar nele. Dentre as muitas opções lá, clique em <mark>Mais Ferramentas</mark> e, em seguida, em <mark>Ferramentas do Desenvolvedor</mark></p>
+            <p>Agora que você já está com essa ferramenta em mãos, você pode notar que ao passar o mouse sobre qualquer elemento HTML, o mesmo ficará azul na sua tela. Você pode notar também que, na maioria deles, tem uma faixa vermelha por fora da faixa azul. Isso é o que chamamos de <strong>margem</strong> que será melhor abordada quando estudarmos CSS. Além disso, você pode alterar elementos usando essa ferramenta, porém, isso não alterará o site no servidor, somente na sua máquina.</p>
             <h2 id="aula04">Estrutura Básica do HTML</h2>
             <small><a href="#inicio">(Voltar)</a></small>
+            <p>Agora que já introduzimos as ferramentas elementares do nosso desenvolvimento com HTML, vamos entender a estrutura básica de um HTML.</p>
+            <p>Antes de mais nada, crie uma pasta e abra a mesma pelo VSCode. É nela que armazenaremos nosso projeto. Feito isso, crie uma arquivo dentro dela pasta chamado: <strong>index.html</strong>. Por padrão definimos a página inicial do nosso site com esse nome.</p>
+            <p>Entrando na parte da estrutura básica, precisamos entender que o HTML consiste em três partes, são elas:</p>
+            <ul>
+                <li>Uma tag chamada <strong>html</strong>. É dentro dela que ficará todo o nosso arquivo HTML.</li>
+                <li>Uma tag chamada <strong>head</strong>. É dentro dela que ficará as configurações da nossa página. Dentro dela, nós podemos definir o título da página que é o que aparece escrito na aba do navegador, usamos a tag <strong>title</strong> para isso.</li>
+                <li>E uma tag chamada <strong>body</strong>. Dentro dela, ficará todo o conteúdo visível da nossa página.</li>
+            </ul>
+            <h3>Mas, como eu defino o que está dentro de uma tag?</h3>
+            <p>A maioria das tags HTML são divididas em duas partes, <i>a tag de abertura</i> e <i>a tag de fechamento</i>, e o que vai dentro da tag fica entre elas. As tags de abertura são caracterizadas pelo símbolo de menor (<); o nome da tag e o símbolo de maior (>). No caso de tags de fechamentos, nós colocamos um símbolo de menor (<); um barra (/); o nome da tag e o símbolo de maior (>). </p>
             <h2 id="aula05">Falando sobre Tags</h2>
             <small><a href="#inicio">(Voltar)</a></small>
+            <p>Entendendo as 3 tags iniciais do HTML, vamos aprofundar mais na  tags. Formatar conteúdo	com HTML nada mais é do que usar as tags certas nos momentos apropriados. Dito isso, vamos alguns das tags principais do HTML.</p>
+            <ul>
+                <li><strong>i</strong>: Essa tag coloca todo conteúdo dentro dela em itálico.</li>
+                <li><strong>strong</strong>: Essa tag coloca todo conteúdo dentro dela em negrito.</li>
+            </ul>
+            <p>Essas duas tags anteriores são tags que possuem tags de abertura e fechamento e para que formatemos o conteúdo de forma adequada, temos que colocá-lo entre essas duas tags.</p>
+            <p>Agora, existem algumas tags que não são divididas em duas como a tag <strong>input</strong>. Essa tag é usada para receber dados do usuário e para usá-la, simplesmente usamos uma tag de abertura. Neste caso, você pode colocar uma barra antes do símbolo de maior se preferir. Vamos ver mais algumas tags como essa:</p>
+            <ul>
+                <li><strong>input</strong>: Como citado, usamos essa tag para receber dados do usuário.</li>
+                <li><strong>img</strong>: Usamos essa tag para inserir imagens no nosso código HTML.</li>
+            </ul>
             <h2 id="aula06">Atributos das Tags</h2>
             <small><a href="#inicio">(Voltar)</a></small>
+            <h3>O que são <strong>Atributos</strong>?</h3>
+            <p>De forma simples, atributos são propriedades que uma tag pode ter. Esses atributos podem alterar o funcionamento padrão de determinada tag. Além disso, existem atributos globais - atributos que você pode usar dentro de qualquer tag - e atributos exclusivos - são exclusivos de determinada tag.</p>
+            <h3>Atributos globais</h3>
+            <ul>
+                <li><strong>id</strong>: É usado para identificar o elementos. Identificar o elemento pode ser útil para alterar suas propriedades via CSS ou JavaScript, por exemplo.</li>
+                <li><strong>style</strong>: É uma tag usada para estilizar elementos via CSS. Dentro dela, você consegue inserir código CSS diretamente.</li>
+                <li><strong>class</strong>: É usado de forma semelhante ao atributo id, ou seja, nós usamos para identificar  elementos para e poder alterá-los via outras tecnologia. A principal diferença é que usualmente, usamos essa tag para identificar um grupo de elementos para alterar, e não apenas um que é o caso do id.</li>
+            </ul>
+            <h3>Atributos exclusivos</h3>
+            <ul>
+                <li><strong>type</strong>: Esse atributo é exclusivo da tag input e define o funcionamento dessa tag. Exemplo: Imagine que você tem que limitar a tag input a somente aceitar texto. Neste caso, você adiciona o valor <strong>text</strong> dentro do atributo ou <strong>number</strong> no caso de precisar receber valores numérico. Outro valor bem comum é <strong>color</strong>, esse valor gera uma caixa de paleta de cores para escolher.</li>
+                <li><strong>src</strong>: Esse atributo é exclusivo da tag img e define o funcionamento dessa tag. Dentro dela, definimos o caminho da nossa imagem seja via internet passando, como valor do atributo, o url da imagem ou via desktop passando o caminho da imagem dentro do computador.</li>
+                <li><strong>width</strong>: Esse atributo é exclusivo da tag img e define o funcionamento dessa tag. Dentro dela, definimos a largura da nossa imagem seja.</li>
+            </ul>
             <h2 id="aula07">Textos</h2>
             <small><a href="#inicio">(Voltar)</a></small>
+            <p>Agora, vamos dar uma olhada nas principais tags para formatar texto.</p>
+            <ul>
+                <li><strong>h1</strong>: Tag geralmente utilizada para definir o título principal da página. Por boa prática, utilizamos essa tag uma vez por página.</li>
+                <li><strong>h2</strong>, <strong>h3</strong>, <strong>h4</strong>, <strong>h5</strong>, <strong>h6</strong> : São níveis de subtítulos da nossa página. Num arquivo HTML, podemos ter diversos níveis de subtítulos, então essas tags definem o tamanho dos subtítulos sendo o h2, o maior e o h6, o menor. Por boa prática, suspeite que tem algo errado no seu código se usar as tags a partir de h4.</li>
+                <li><strong>p</strong>: Utilizada para definir um parágrafo. Toda vez que você quiser inserir um novo parágrafo na sua página, use esta tag.</li>
+                <li><strong>blockquote</strong>: Essa tag é usada para inserir uma citação no seu texto HTML. Imagine que você está escrevendo um texto sobre fazer bolos e,de repente, você decide inserir a frase: <i>"Sei que nada sei." - Sócrates</i>. Veja que esta frase não tem nada a ver com o assunto principal do texto, é uma citação. Neste caso, usamos esta tag.</li>
+                <li><strong>mark</strong>: Essa tag deixa o seu conteúdo grifado em amarelo com um marca-texto.</li>
+                <li><strong>sup</strong>: Essa tag faz com que eu eleve o seu conteúdo da altura da linha, como se fosse um expoente de uma potência por exemplo.</li>
+            </ul>
             <h2 id="aula08">Listas Ordenadas e Não Ordenadas</h2>
             <small><a href="#inicio">(Voltar)</a></small>
+            <p>Listas são elementos que usaremos e muito no nosso desenvolvimento com HTML. Elas são bem úteis para descrevermos a sequência de operações de algo ou os elementos necessários para a realização de determinada operação.</p>
+            <h3>Listas Ordenadas</h3>
+            <p><strong>Listas Ordenadas</strong> são listas que tem uma sequência definida, ou seja, é necessário que você execute os passos em ordem. Quando usamos listas ordenadas, o HTML insere um marcador numérico ao lado esquerdo de cada elemento da lista. Esse marcador vai de 1 até o último elemento da lista.</p>
+            <p>Para usarmos listas ordenadas, precisamos usar a tag <strong>ol</strong> e dentro dela, usamos outra tag chamada <strong>li</strong>. Cada elemento da lista deve estar dentro de uma tag li.</p>
+            <h3>Listas Não Ordenadas</h3>
+            <p><strong>Listas Não Ordenadas</strong> são listas que não tem uma sequência definida, ou seja, você pode executar as operações de um processo na ordem que você quiser, não existe uma sequência definida. Quando usamos listas não ordenadas, o HTML insere um marcador preto arredondado ao lado esquerdo de cada elemento da lista.</p>
+            <p>Para usarmos listas não ordenadas, precisamos usar a tag <strong>ul</strong> e dentro dela, usamos outra tag chamada <strong>li</strong>. Cada elemento da lista deve estar dentro de uma tag li.</p>
             <h2 id="aula09">Links</h2>
             <small><a href="#inicio">(Voltar)</a></small>
+            <h3>O que é um link?</h3>
+            <p>Link nada mais é do que um código que te manda para outro espaço na internet. Esse espaço pode ser dentro do seu site ou fora dele.</p>
+            <h3>Como faço isso?</h3>
+            <p>Para inserir um link, com um texto apropriado, usamos a tag <strong>a</strong>. Essa tag possui sua abertura e fechamento e como toda tag no html, nós sempre adicionamos os atributos na tag de abertura. Adicionamos o link através do atributo <strong>href</strong></p>. Seu valor será o link para onde queremos redirecionar o usuário como: <mark:>https://www.google.com.br</mark:>. No meio dela, adicionamos o texto que queremos exibir para o usuário.
+            <p>Além disso, nós podemos redirecionar o usuário para uma das páginas do nosso site. Fazemos isso, passando dentro de href, o nome do arquivo html dessa desejada página.</p>
+            <p>Outro atributo específico da tag a é o <strong>target</strong>. Neste atributo, definimos onde o link será aberto, na aba atual ou em outra aba. Por padrão, ele abre o link na própria aba, o valor de target que faz isso é o <strong>_self</strong>, porém se adicionarmos o valor <strong>_blank</strong>, o link será aberto em outra aba. Como boa prática, se o link para o qual você quer redirecionar o usuário for dentro do seu site, abra na mesma página, caso contrário, abra numa outra aba. Existem outra valores para o atributo target como <strong>_top</strong> e <strong>_parent</strong>, mas de uma forma geral, eles não são mais utilizados, pois se referem uma outra épica de desenvolvimento.</p>
+            <p>Outro atributo interessante aqui é <strong>title</strong>. O title permite que seja exibido um balão de texto com o texto que você quiser. Ele será exibido sempre que o usuário passar o mouse emcima do link.</p>
 
     </body>
 </html>
