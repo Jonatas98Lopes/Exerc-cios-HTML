@@ -4,4 +4,9 @@ Este desafio foi desenvolvido com o intuíto de praticar tudo que foi aprendido 
 
 Cada seção explica uma aula do curso e no final, alguns links de referências para o conteúdo abordado.
 
-O modelo padrão do projeto  possuiera um título, um índice onde podíamos redirecionar os usuários para a parte do site adequada, subtítulos referenciando cada aula do curso, links para retornar ao início da página e conteúdo explicativo abaixo.
+### O modelo padrão do projeto possuía as seguintes demandas:
+*   Deveria possui um título h1;
+*   Uma seção de índice onde podíamos redirecionar os usuários para a parte do site adequada;
+*   Subtítulos referenciando cada aula do curso;
+*   Links para retornar ao início da página;
+*   Conteúdo explicativo abaixo.
