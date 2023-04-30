@@ -1,0 +1,47 @@
+A primeira página do site é chamada index.html;
+
+O HTML consiste em três partes: As tags, html, head body.
+
+html : todo código html deve estar contido dentro dela
+head : configurações d página
+body : tudo que aparece pro usuário está aqui
+i: Deixa o texto em itálico
+strong: Deixa em negrito
+u: Sublinhado
+sub: Coloca o conteúdo elemento como se fosse um expoente matemático.
+mark: Grifa o texto em amarelo
+input: Campo para receber dados
+img: Tag para receber imagens.
+
+O que são atributos: Propriedades que as tags podem ter;
+
+id= Identificador de tag.
+style= Para estilizar a tag.
+class= Juntar várias tags html em uma classe para formatação.
+type= muda  o tipo do input. Específico da tag input: Esse atributo pode ter como valor: text(recebe só textu, number(recebe só numero), color (abre um seletor decor)
+src= Específico da tag img e video: Ela recebe a origem da imagem.
+width = Formata a largura da img ou video.
+
+Vamos voltar para tagss:
+
+h1,h2,h3...h6: Níveis de título, subtítulo;
+p = O corpo do texto. O páragrafo. O que vem depois do título. A cada novo páragrafo, coloque uma nova.
+blockquote= Uma citação de alguém no meio do seu texto. Exemplo: "Sei que nada sei."
+
+
+Ás vezes, o navegador defina margens no seu html sozinho.
+
+Listas:
+ol : Listas ordenadas
+ul: Listas não ordenadas
+li: Cada elemento da lista deve estar contido aqui. Não importa se é ordenada ou não
+hr: Traça uma linha horizontal
+
+Links:
+a : para ligar links de páginas diferentes.Ela tem que o atriburo href para colocar  o link, além do texto do link. Outro atributo pode ser o target que define se iremos abrir o link na mesma guia ou não. Nele temos o seguintes valores: _self(utilzado para abrir a página na mesma guiar), _blank (abrir o link em outra guia.), parent ou top não são mais usados. Temos outro atributo aqui chamado title que faz aparecer um balãozinho explicando pro usuários quando ele passa o mouse emcima do link.
+
+Um dos bons uso do href é quando queremos redirecionar o usuário para um lugar dentro da mesma página. Como? Simplesmente, defina o id do item para onde quer redirecionar o usuário, e coloque dentro href.
+
+Regra: Quando for para mandar o usuário para um link no seu site, abra na mesma guia, caso contrário, abra em outra.
+
+small = para colocar texto pequeno
