@@ -2,6 +2,8 @@
 
 Vamos ver tudo relacionado à tags de mídia, ou seja, aúdio, vídeo, imagens, etc...
 
+***
+
 ## Tag img
 
 A tag **img** serve para adicionar imagens. Ela tem o atributo **src** que serve para adicionar fotos ao seu site, sejam externas, urls, ou internas, o caminho da imagem.
@@ -19,7 +21,6 @@ Exemplo:
 Precisamos entender também os formatos da imagens. Gif é muito pesado para conseguir uma resolução satisfatória, jgp comprime a imagem o que a faz perder qualidade e  png é o melhor. svg é limitado a imagens mais opacas, mas tende a ser melhor. Se usar o svg, certifique-se de usar a tag **svg**
 
 ***
-
 ## Tag audio
 
 Tag exclusiva para aúdio.
@@ -37,6 +38,8 @@ Exemplo:
     Seu navegador não tem suporte a esse aúdio.
 </audio>
 ```
+***
+
 ## Tag video
 
 Agora, vamos falar sobre a tag vídeo usada para adicionar vídeo no seu website. Assim como na audio, cada navegador renderiza o player de uma forma.
@@ -67,3 +70,50 @@ Exemplo:
     Seu navegador não tem suporte a esse vídeo.
 </video>
 ```
+
+***
+
+## Tag track
+
+Essa é uma tag que veio para auxiliar a tag **video**. Ela é usada para colocar legendas nos vídeos. Você também pode gerar os *chapters* ou *capítulos* através dessa tag. *Chapters* nada mais são do que uma forma de definir o tempo do vídeo que a legenda aparecerá. 
+
+Geralmente, os *chapters* são gerados em arquivos no formato **.vtt**.
+
+Falando sobre essa tag, assim como **source**, ela é uma tag só de abertura. Dentro dela, você precisa definir alguns atributos:
+
+*   **src**: O arquivo fonte que carregará a legenda.
+
+* **kind**: Define o tipo de legenda. Não existe apenas um tipo de legenda para vídeo. Nós podemos ter legendas que descrevem o as pessoas estão falando; legendas que descrevem o local do evento; legendas que narram o que será abordado no vídeo e assim por diante. Temos alguns valores válidos aqui:
+
+   *   **captions**: Descreve as falas das pessoas.
+   
+   *   **chapters**: Ele narra os fatos dos vídeos. Mostra o que será abordado no vídeo.
+   
+   *   **descriptions**: Define o que leitor de tela vai ler.
+   
+   *   **metadata**: Dados adicionais para SEO.
+   
+   *   **subtitles**: Descreve mais sobre vídeo. Descreve o local em que os eventos ocorrem no vídeo.
+
+*   **srclang**: Define a língua da legenda.
+
+*   **default**: Define a legenda padrão que aparecerá quando o usuário ativá-la.
+
+Por fim, eu posso ter mais de uma legenda.
+
+Exemplo:
+```
+<video controls autoplay >
+    <source src="video.mp3" />
+    <source src="video2.webm" />
+    <track src="legenda.vtt" kind="captions" srclang="en"/>
+    <track src="legendabrasileira.vtt" kind="captions" srclang="pt-br"/>
+    Seu navegador não tem suporte a esse vídeo.
+</video>
+```
+
+***
+
+## Tag iframe
+
+Como já mencionado, o **iframe** permite que você adicione páginas externas ao seu html. No caso do YouTube, você pode clicar em compartilhar, no vídeo que quer colocar, no código, depois em incorporar. Ele vai gerar um iframe para você.
