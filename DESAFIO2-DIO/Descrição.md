@@ -6,6 +6,8 @@ Todas as páginas seguiram o padrão definido na foto abaixo:
 
 ![Modelo de estilização das páginas HTML do site](assets/modelo.png "Esta é uma imagem que descreve como devem ser a formatação das páginas.")
 
+O arquivo **base.css** junto com o templato disponiblizado serão a base.
+
 * No menu, devem ficar os links das outras páginas;
 * No header, vai ficar um logotipo;
 * No rodapé, vai ficar informações de contato;
