@@ -1,64 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template - Utilizar como modelo</title>
-    <link rel="stylesheet" href="static/css/base.css">
-</head>
-<body>
-    <div class="wrapper">
-        <div class="menu">
-            <!-- Aqui vai o seu menu -->
-           <ul style="margin-right: 300px; ">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="descricao.html">Sobre</a></li>
-                <li><a href="atendimento.html">Horários</a></li>
-           </ul>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato - Clínica Harmonia Médica</title>
+        <link rel="stylesheet" href="static/css/base.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="menu">
+                <!-- Aqui vai o seu menu -->
+                <ul style="margin-right: 100px; ">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="descricao.html">Sobre</a></li>
+                    <li><a href="atendimento.html">Horários</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <div class="header">
+                    <img src="static/photos/medical-5459661.svg" 
+                         alt="Imagem de uma ficha médica a ser preenchida" 
+                         title="Sua informações são preciosas para gente!" width="200">
+                    <h1 style="text-align: left; color: white; margin-left: 30px;">Clínica Harmonia Médica</h1>
+                </div>
+                <div class="content">
+                    <h2>Entre em contato com a gente!</h2>
+                    <p><strong>Telefone</strong>: (11) 5555-1234</p>
+                    <p><strong>Endereço</strong>: Viaduto do Chá, 15 – Anhangabaú – Centro</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.584740574635\
+                    !2d-46.63997192562483!3d-23.547433561078815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1\
+                    !3m3!1m2!1s0x94ce5968aaa1ad71%3A0xd92b6ce64c7cb535!2sPrefeitura%20Municipal%20de%20S\
+                    %C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1683233947499!5m2!1spt-BR!2sbr"\ width="600" 
+                    height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h2>Quer falar conosco?</h2>
+                    <form method="post">
+                        <div style="margin-bottom: 10px;">
+                            <label>Nome:</label><input type="text">
+                            <label>Email:</label><input type="email">
+                        </div>
+                        <div>
+                            <label style="margin-left: -21px;">Endereço:</label><input type="text">
+                        </div>
+                        <div>
+                            <label style="margin-left: -13px;">Assunto:</label><input type="text">
+                        </div>
+                        <div>
+                            <label style="margin-left: -13px;">Mensagem:</label><br>
+                            <textarea style="margin-left: 43px;"cols="30" rows="5"></textarea>
+                        </div>
+                        <div>
+                            <button style="margin-left: -10px;cursor: pointer;" type="reset">
+                                Limpar Formulário
+                            </button>
+                            <button type="submit" style="cursor: pointer;">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer">
+                    <h2 style="color:white; margin-left: 10px;">Informações de Contato:</h2>
+                    <p style="color:white; margin-left: 10px;">
+                        <strong>Email</strong>: contato@bemviverclinic.com.br</p>
+                    <p style="color:white; margin-left: 10px;"><strong>Telefone</strong>: (11) 5555-1234</p>
+                </div>
+            </div>
         </div>
-
-        <div class="main">
-            <div class="header">
-                <img src="static/photos/medical-5459661.svg" alt="Imagem de uma ficha médica a ser preenchida" title="Sua informações são preciosas para gente!" width="300">
-                <h1 style="text-align: left; color: white; margin-left: 30px;">Clínica Harmonia Médica</h1>
-            </div>
-            <div class="content">
-                <h2>Entre em contato com a gente!</h2>
-                <p><strong>Telefone</strong>: (11) 5555-1234</p>
-                <p><strong>Endereço</strong>: Viaduto do Chá, 15 – Anhangabaú – Centro</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.584740574635!2d-46.63997192562483!3d-23.547433561078815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5968aaa1ad71%3A0xd92b6ce64c7cb535!2sPrefeitura%20Municipal%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1683233947499!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                <h2>Quer falar conosco?</h2>
-                <form method="post">
-                    <div style="margin-bottom: 10px;">
-                        <label>Nome:</label><input type="text">
-                        <label>Email:</label><input type="email">
-                    </div>
-                    <div>
-                        <label style="margin-left: -21px;">Endereço:</label><input type="text">
-                    </div>
-                    <div>
-                        <label style="margin-left: -13px;">Assunto:</label><input type="text">
-                    </div>
-                    <div>
-                        <label style="margin-left: -13px;">Mensagem:</label><br>
-                        <textarea style="margin-left: 43px;"cols="30" rows="5"></textarea>
-                    </div>
-                    <div>
-                        <button style="margin-left: -10px;cursor: pointer;" type="reset">Limpar Formulário</button>
-                        <button type="submit" style="cursor: pointer;">Enviar</button>
-                    </div>
-
-                </form>
-                
-            </div>
-            <div class="footer">
-                <h2 style="color:white; margin-left: 10px;">Informações de Contato:</h2>
-                <p style="color:white; margin-left: 10px;"><strong>Email</strong>: contato@bemviverclinic.com.br</p>
-                <p style="color:white; margin-left: 10px;"><strong>Telefone</strong>: (11) 5555-1234</p>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
